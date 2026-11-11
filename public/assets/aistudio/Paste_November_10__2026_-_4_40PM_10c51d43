@@ -1,0 +1,1252 @@
+# PROMPT MAESTRO DE DESARROLLO INTEGRAL — AFLOTE
+## RECONSTRUCCIÓN VISUAL FIEL, IMPLEMENTACIÓN FUNCIONAL, INTEGRACIÓN Y FINALIZACIÓN DEL PROYECTO
+
+Asume el papel de un equipo multidisciplinario de desarrollo de software compuesto por:
+
+- Un arquitecto de software especializado en Android.
+- Un desarrollador sénior de Kotlin y Jetpack Compose.
+- Un diseñador UI/UX especializado en aplicaciones móviles.
+- Un especialista en experiencia de usuario y accesibilidad.
+- Un especialista en privacidad y seguridad de aplicaciones.
+- Un ingeniero QA especializado en pruebas funcionales e integración.
+
+Tu misión es trabajar sobre el proyecto Android de **AFLOTE** que te estoy proporcionando, llevarlo hasta el estado funcional y visual que describo en este documento y entregar una aplicación coherente, completa, integrada, profesional y correctamente probada.
+
+No quiero una propuesta, una demostración conceptual, un prototipo de pantallas aisladas ni una lista de recomendaciones.
+
+**QUIERO QUE IMPLEMENTES EL PROYECTO REAL.**
+
+Debes modificar el código existente, reconstruir la interfaz visual a partir de las imágenes de referencia que adjuntaré, implementar las funcionalidades definidas, conectar las diferentes secciones, corregir errores, ejecutar pruebas y verificar el resultado en el emulador.
+
+El resultado debe corresponder al proyecto que hemos construido y definido hasta ahora.
+
+---
+
+# 1. REGLA PRINCIPAL: LAS IMÁGENES ADJUNTAS SON LA REFERENCIA VISUAL OBLIGATORIA
+
+Voy a proporcionarte imágenes conceptuales de cómo debe verse Aflote.
+
+Estas imágenes no son simples referencias de inspiración.
+
+Son la especificación visual que debes reproducir.
+
+Debes analizarlas cuidadosamente antes de comenzar a modificar el código.
+
+## 1.1. Fidelidad visual
+
+Debes reproducir con la mayor fidelidad posible:
+
+- Distribución de los elementos.
+- Composición.
+- Jerarquía visual.
+- Proporciones.
+- Ubicación de los componentes.
+- Dimensiones relativas.
+- Espaciados.
+- Márgenes.
+- Tipografía.
+- Tamaños de texto.
+- Colores.
+- Gradientes.
+- Fondos.
+- Ilustraciones.
+- Formas.
+- Bordes.
+- Radios.
+- Sombras.
+- Transparencias.
+- Efectos de profundidad.
+- Navegación.
+- Tratamiento de los botones.
+- Identidad gráfica.
+
+No basta con utilizar colores similares.
+
+No basta con colocar tarjetas parecidas.
+
+No basta con conservar el contenido de las pantallas anteriores y cambiar el fondo.
+
+Debes reconstruir la composición de las imágenes.
+
+## 1.2. Jerarquía de las referencias
+
+Si adjunto tres pantallas principales, considéralas las referencias rectoras:
+
+1. Inicio.
+2. Rutas.
+3. Contrapeso.
+
+Estas tres pantallas establecen el lenguaje visual que debe extenderse al resto de la aplicación.
+
+Las demás pantallas deben adaptarse a ese sistema sin introducir estilos diferentes.
+
+Si adjunto referencias adicionales para otras pantallas, también debes respetarlas.
+
+## 1.3. No utilizar las imágenes como fondos
+
+Está prohibido solucionar la reconstrucción colocando capturas de pantalla como fondos.
+
+Debes desarrollar interfaces reales utilizando componentes de Jetpack Compose.
+
+Los elementos deben conservar:
+- Interactividad.
+- Adaptabilidad.
+- Escalabilidad.
+- Accesibilidad.
+- Capacidad de actualización.
+- Integración con los estados reales de la aplicación.
+
+Si una ilustración requiere un recurso gráfico, utiliza un recurso limpio, bien integrado y de buena calidad.
+
+No utilices recortes defectuosos de las imágenes de referencia.
+
+No dejes fragmentos rectangulares, bordes de capturas, cuadrados blancos ni elementos gráficos residuales.
+
+---
+
+# 2. IDENTIDAD DEL PROYECTO
+
+## 2.1. Nombre
+
+AFLOTE.
+
+Es una plataforma digital de bienestar emocional, autoconocimiento, prevención y acompañamiento psicológico para estudiantes.
+
+Su concepto se construye alrededor de la metáfora del océano y las mareas emocionales.
+
+## 2.2. Propósito
+
+Aflote busca proporcionar un espacio digital donde los estudiantes puedan:
+
+- Reconocer sus emociones.
+- Comprender lo que están experimentando.
+- Explorar herramientas de bienestar.
+- Realizar actividades de autorregulación.
+- Identificar sus necesidades.
+- Registrar su proceso personal.
+- Consultar su evolución.
+- Acceder a acompañamiento psicológico cuando lo necesiten.
+- Establecer una relación autorizada con un profesional.
+
+La aplicación no debe parecer una plataforma clínica fría ni un videojuego infantil.
+
+Debe sentirse moderna, confiable, tranquila, atractiva y profesional.
+
+## 2.3. Identidad gráfica
+
+Conserva el logotipo original de Aflote.
+
+No lo rediseñes ni lo sustituyas por una interpretación diferente.
+
+La identidad visual está relacionada con el agua, el océano, la profundidad y las olas.
+
+Paleta principal:
+
+- #0E4273
+- #1D95D3
+- #0EA9CE
+- #FFFFFF
+- #061A2E
+- #082236
+- #38E1E5
+- #F59E0B
+
+El azul profundo, el cian y los tonos oceánicos deben tener una presencia coherente.
+
+El dorado puede utilizarse como acento, no como color dominante.
+
+No agregues colores aleatorios que rompan la identidad.
+
+---
+
+# 3. PRIMERA ETAPA OBLIGATORIA: AUDITORÍA DEL PROYECTO REAL
+
+Antes de modificar cualquier archivo, inspecciona el proyecto completo.
+
+No empieces programando pantallas sin comprender cómo está construido.
+
+Debes identificar:
+
+- Estructura de carpetas.
+- Archivos Kotlin.
+- Pantallas.
+- Componentes reutilizables.
+- ViewModels.
+- Modelos de datos.
+- Repositorios.
+- Casos de uso.
+- Navegación.
+- Gestión de estados.
+- Almacenamiento.
+- Persistencia.
+- Autenticación.
+- Gestión de perfiles.
+- Vinculación entre estudiantes y psicólogos.
+- Sistema de citas.
+- Permisos.
+- Manejo de crisis.
+- Recursos gráficos.
+- Pruebas existentes.
+- Dependencias.
+- Configuración de Gradle.
+
+Localiza los archivos reales, aunque sus nombres sean diferentes a los que aparecen en este documento.
+
+Entre los archivos reportados anteriormente se encuentran:
+
+- StudentHomeScreen.kt
+- RutasScreen.kt
+- ContrapesoScreen.kt
+- ActivitiesCatalogScreen.kt
+- ActivityDetailScreen.kt
+- EmotionalCheckinScreen.kt
+- EmotionalHistoryScreen.kt
+- StudentAccompanimentScreen.kt
+- PsychologistDashboardScreen.kt
+
+No asumas que todos siguen existiendo con esos nombres.
+
+## 3.1. Clasifica el estado de cada funcionalidad
+
+Utiliza estas categorías:
+
+- Implementada y verificada.
+- Implementada parcialmente.
+- Existe solamente la interfaz.
+- Existe la lógica, pero no está conectada.
+- No implementada.
+- Presenta errores.
+- Necesita mejoras.
+
+Entrega primero un diagnóstico breve y después continúa con la implementación.
+
+No detengas el trabajo esperando una aprobación para cada archivo.
+
+## 3.2. Protección de lo que ya funciona
+
+No elimines ni reconstruyas innecesariamente:
+
+- Modelos de datos.
+- Repositorios.
+- ViewModels.
+- Validaciones.
+- Navegación funcional.
+- Autenticación existente.
+- Vinculación.
+- Permisos.
+- Citas.
+- Manejo de crisis.
+- Funciones que ya estén verificadas.
+
+Si necesitas modificar algo, conserva su comportamiento o documenta la razón técnica del cambio.
+
+La reconstrucción visual no debe destruir la lógica funcional.
+
+---
+
+# 4. ARQUITECTURA GENERAL DE AFLOTE
+
+La aplicación debe contar con dos perfiles principales.
+
+## 4.1. Perfil de estudiante
+
+Es el usuario principal.
+
+Debe tener acceso a:
+
+1. Inicio.
+2. Registro emocional.
+3. Rutas.
+4. Contrapeso.
+5. Catálogo de actividades.
+6. Detalle y ejecución de actividades.
+7. Cierres reflexivos.
+8. Bitácora.
+9. Historial emocional.
+10. Progreso semanal.
+11. Perfil.
+12. Acompañamiento psicológico.
+13. Asistente conversacional, si está disponible en la implementación real.
+
+## 4.2. Perfil de psicólogo
+
+Debe tener acceso a:
+
+1. Panel profesional.
+2. Estudiantes vinculados.
+3. Información autorizada.
+4. Indicadores de seguimiento.
+5. Generación y validación de códigos.
+6. Gestión de citas.
+7. Disponibilidad.
+8. Seguimiento del proceso autorizado.
+
+Ambos perfiles deben tener experiencias visuales coherentes con la identidad de Aflote, pero sus necesidades funcionales son diferentes.
+
+No reutilices indiscriminadamente la misma pantalla para ambos roles.
+
+## 4.3. Entrada y selección de perfil
+
+La aplicación debe permitir identificar claramente el ingreso como:
+
+- Estudiante.
+- Psicólogo.
+
+Conserva el sistema de autenticación que realmente exista.
+
+Si no existe autenticación real, identifica la limitación y construye una solución funcional compatible con la arquitectura actual, sin simular que existe un backend.
+
+No inventes cuentas, contraseñas ni sesiones persistentes.
+
+---
+
+# 5. EXPERIENCIA DEL ESTUDIANTE
+
+## 5.1. INICIO
+
+Es una de las tres pantallas rectoras.
+
+Debe reproducir la imagen de referencia que adjuntaré.
+
+Debe integrar:
+
+- Identidad Aflote.
+- Avatar.
+- Saludo personalizado.
+- Pregunta sobre cómo se siente el estudiante.
+- Acceso al registro emocional.
+- Ruta actual.
+- Herramientas principales.
+- Progreso semanal.
+- Navegación inferior.
+
+La distribución debe corresponder a la referencia visual.
+
+El contenido debe ser dinámico.
+
+No utilizar nombres, registros o actividades ficticias como datos permanentes de producción.
+
+El saludo puede utilizar el nombre del estudiante autenticado.
+
+El progreso semanal debe mostrar datos reales.
+
+## 5.2. REGISTRO EMOCIONAL
+
+El estudiante debe poder registrar cómo se siente.
+
+Conserva el flujo existente y sus validaciones.
+
+Debe permitir:
+- Seleccionar emociones.
+- Identificar intensidad.
+- Responder preguntas de contexto.
+- Añadir información opcional.
+- Confirmar el registro.
+
+La validación principal es que debe existir al menos una emoción seleccionada.
+
+No permitir registros vacíos.
+
+El registro debe guardarse correctamente.
+
+Debe actualizar el historial emocional cuando corresponda.
+
+No convertir una emoción en un diagnóstico.
+
+No inferir una condición psicológica.
+
+## 5.3. MAREAS EMOCIONALES
+
+La metáfora de las mareas representa diferentes estados emocionales.
+
+Se han definido cuatro categorías:
+
+- Tranquila.
+- Movida.
+- Alta.
+- Tormenta.
+
+La experiencia debe permitir identificar el estado emocional sin que las categorías se sientan como etiquetas negativas.
+
+La intensidad visual debe ser coherente.
+
+Se ha planteado utilizar ocho colores, dos por cada categoría, con variaciones de intensidad.
+
+Los colores deben conservar armonía con la identidad oceánica.
+
+No representar las emociones intensas con una estética agresiva o alarmista.
+
+## 5.4. HISTORIAL EMOCIONAL
+
+Debe permitir revisar registros anteriores.
+
+Debe mostrar información cronológica y visualmente comprensible.
+
+Puede incluir:
+- Registros.
+- Fechas.
+- Intensidades.
+- Tendencias.
+- Resúmenes semanales.
+
+No presentar estadísticas engañosas.
+
+No inventar información.
+
+No convertir los datos en calificaciones emocionales.
+
+La información privada debe seguir siendo privada.
+
+## 5.5. PROGRESO SEMANAL
+
+El progreso semanal debe reflejar el recorrido del estudiante.
+
+Puede mostrar:
+- Actividades realizadas.
+- Momentos registrados.
+- Categorías exploradas.
+- Frecuencia de uso.
+- Evolución de la participación.
+
+Los datos deben calcularse desde los registros reales.
+
+No utilizar rachas, monedas, puntos, niveles ni mecanismos que generen presión.
+
+El objetivo es ayudar al estudiante a observar su recorrido, no competir.
+
+---
+
+# 6. RUTAS
+
+Rutas es una pantalla conceptual de navegación emocional.
+
+Debe reproducir la referencia adjunta.
+
+Se han definido cuatro estaciones:
+
+1. Descanso.
+2. Equilibrio.
+3. Exploración.
+4. Acompañamiento.
+
+Debe conservar:
+- Fondo oceánico.
+- Profundidad.
+- Sendero sinuoso.
+- Estaciones.
+- Elementos luminosos.
+- Jerarquía visual.
+- Cápsula de destino.
+- Progreso.
+
+Cada estación debe tener una acción real.
+
+No crear estaciones decorativas que no lleven a ningún sitio.
+
+La navegación debe funcionar correctamente.
+
+No introducir una segunda barra inferior.
+
+No duplicar rutas ni accesos.
+
+---
+
+# 7. CONTRAPESO
+
+Es la tercera pantalla rectora.
+
+Debe reproducir fielmente la imagen adjunta.
+
+Contiene cuatro ambientes:
+
+## CALMAR
+
+Relacionado con tranquilidad y regulación.
+
+Identidad:
+- Cian.
+- Azul marino.
+- Oleaje.
+- Movimiento suave.
+
+## RECUPERAR
+
+Relacionado con recuperar energía.
+
+Identidad:
+- Tonos cálidos.
+- Ámbar.
+- Amanecer.
+- Sensación de renovación.
+
+## EQUILIBRAR
+
+Relacionado con estabilidad.
+
+Identidad:
+- Jade.
+- Esmeralda.
+- Formas armónicas.
+
+## CONCENTRAR
+
+Relacionado con atención.
+
+Identidad:
+- Índigo.
+- Violeta.
+- Ondas nocturnas.
+
+Cada ambiente debe contar con:
+- Selección.
+- Estado seleccionado.
+- Vista previa.
+- Activación.
+- Confirmación visual.
+- Persistencia coherente con la arquitectura.
+
+No basta con cambiar el color de una tarjeta.
+
+El ambiente seleccionado debe coincidir con el que se activa.
+
+No afirmar que se modifica el sistema operativo del dispositivo si el efecto solo se aplica dentro de Aflote.
+
+---
+
+# 8. CATÁLOGO DE ACTIVIDADES
+
+El catálogo debe estar conectado con las necesidades del estudiante.
+
+Categorías existentes:
+
+- Respiración y regulación.
+- Psicología y autoconocimiento.
+- Escritura y expresión.
+- Descanso y sueño.
+- Actividades grupales.
+- Exploración y creatividad.
+- Concentración y equilibrio.
+
+Cada actividad debe contar con:
+
+- Identificador único.
+- Nombre.
+- Descripción corta.
+- Descripción completa.
+- Categoría.
+- Objetivo.
+- Necesidades relacionadas.
+- Duración estimada.
+- Tipo de ejercicio.
+- Instrucciones.
+- Recursos necesarios.
+- Estado.
+- Preguntas de cierre, si aplica.
+
+Utiliza metadatos estructurados.
+
+No filtres actividades buscando palabras dentro de sus títulos.
+
+El estudiante debe poder:
+- Ver todas las actividades.
+- Filtrar.
+- Consultar detalles.
+- Iniciar.
+- Continuar cuando sea posible.
+- Finalizar.
+- Consultar su historial.
+
+Los estados deben distinguir entre:
+- Disponible.
+- Iniciada.
+- Completada.
+- Interrumpida.
+
+No marcar una actividad como completada simplemente por abrirla.
+
+---
+
+# 9. FILTROS POR NECESIDAD
+
+Implementa filtros funcionales para:
+
+- Quiero calmarme.
+- Necesito recuperar energía.
+- Quiero concentrarme.
+- Necesito equilibrarme.
+- Quiero expresarme.
+- Necesito descansar.
+- No sé qué necesito.
+
+Cada opción debe mostrar actividades pertinentes.
+
+Las recomendaciones deben ser explicables y basarse en los metadatos de las actividades.
+
+Debe existir la posibilidad de:
+- Limpiar filtros.
+- Consultar todas las actividades.
+- Cambiar de necesidad.
+- Ignorar recomendaciones.
+
+La aplicación no debe afirmar que conoce exactamente lo que necesita el estudiante.
+
+Utiliza expresiones como:
+
+"Podría ayudarte ahora".
+
+No utilices:
+
+"Tu diagnóstico es".
+
+---
+
+# 10. EJECUCIÓN DE ACTIVIDADES
+
+Cada actividad debe tener una experiencia de ejecución adecuada a su naturaleza.
+
+No utilizar una plantilla idéntica si la actividad requiere otra interacción.
+
+Puede incluir:
+- Instrucciones.
+- Pasos.
+- Temporizador.
+- Indicador de progreso.
+- Pausa.
+- Continuación.
+- Finalización.
+- Recursos visuales o auditivos disponibles.
+
+Los temporizadores deben funcionar realmente.
+
+Los botones deben ejecutar acciones reales.
+
+Si una actividad se interrumpe, conserva el estado cuando la arquitectura lo permita.
+
+No registrar dos veces una actividad por pulsaciones repetidas.
+
+---
+
+# 11. CIERRES REFLEXIVOS
+
+Al finalizar una actividad, se puede presentar un cierre breve.
+
+Ejemplos:
+
+- ¿Cómo te sientes después de realizarla?
+- ¿Qué fue lo que más te ayudó?
+- ¿Te resultó fácil o difícil?
+- ¿Te gustaría repetirla?
+- ¿Qué te llevas de este momento?
+
+Las preguntas deben adaptarse al tipo de actividad.
+
+La reflexión debe ser:
+- Opcional.
+- Breve.
+- Privada.
+- Relacionada con la actividad correspondiente.
+
+Debe existir la opción de omitirla.
+
+No obligar a escribir.
+
+No mostrar automáticamente las respuestas al psicólogo.
+
+Distinguir entre:
+- Actividad completada con reflexión.
+- Actividad completada sin reflexión.
+- Actividad interrumpida.
+
+---
+
+# 12. BITÁCORA
+
+La bitácora debe funcionar como registro personal de las actividades.
+
+Cada entrada debe incluir:
+
+- Nombre.
+- Categoría.
+- Fecha.
+- Hora.
+- Duración, cuando esté disponible.
+- Estado.
+- Reflexión asociada, si existe.
+- Identificador de la actividad.
+
+Debe permitir consultar el recorrido cronológicamente.
+
+Debe incluir estados vacíos y filtros si son pertinentes.
+
+No generar datos ficticios.
+
+No duplicar entradas.
+
+No exponer reflexiones privadas en el portal profesional.
+
+La bitácora debe actualizarse a partir de las actividades reales.
+
+---
+
+# 13. PERFIL DEL ESTUDIANTE
+
+Debe permitir gestionar información básica:
+
+- Nombre.
+- Avatar.
+- Preferencias.
+- Ajustes.
+- Estado de vinculación.
+- Configuraciones disponibles.
+
+No agregar formularios innecesarios.
+
+No solicitar datos sensibles sin justificación.
+
+No incluir opciones decorativas.
+
+Cada botón debe tener una función real.
+
+Conservar las condiciones de autenticación y privacidad existentes.
+
+---
+
+# 14. ACOMPAÑAMIENTO PSICOLÓGICO
+
+Aflote debe permitir que un estudiante pueda vincularse con un psicólogo.
+
+La vinculación se realiza mediante un código de seis dígitos según el sistema reportado.
+
+Debe comprobarse:
+
+- Generación.
+- Unicidad.
+- Validación.
+- Canje.
+- Estado de vinculación.
+- Prevención de duplicados.
+- Manejo de códigos inválidos.
+- Expiración, si existe.
+- Permisos asociados.
+
+No permitir que un estudiante se vincule automáticamente sin una validación real.
+
+La vinculación no debe otorgar acceso indiscriminado.
+
+---
+
+# 15. PRIVACIDAD Y PERMISOS
+
+Esta es una regla innegociable.
+
+Un estudiante puede utilizar Aflote sin iniciar un proceso psicológico.
+
+En ese caso, su información personal debe permanecer privada.
+
+Cuando existe un proceso psicológico, el estudiante debe autorizar la información que se comparte según los permisos implementados.
+
+El psicólogo puede consultar información autorizada y resúmenes pertinentes.
+
+**Nunca compartas automáticamente las notas personales ni las respuestas íntimas de los cierres reflexivos.**
+
+Diferencia:
+- Información privada.
+- Información autorizada.
+- Información agregada.
+- Información profesional compartida.
+
+La revocación de permisos debe tener efectos reales.
+
+No simular privacidad mediante controles visuales que no modifiquen el acceso a los datos.
+
+---
+
+# 16. PORTAL DEL PSICÓLOGO
+
+El portal debe contar con una experiencia propia.
+
+Debe incluir:
+
+- Panel principal.
+- Indicadores.
+- Estudiantes vinculados.
+- Códigos de vinculación.
+- Seguimiento autorizado.
+- Estado de permisos.
+- Gestión de citas.
+- Disponibilidad.
+
+Los indicadores deben provenir de datos reales.
+
+No mostrar información de estudiantes no vinculados.
+
+No presentar notas privadas.
+
+No inventar citas ni estudiantes.
+
+La información debe actualizarse de acuerdo con el estado real de la aplicación.
+
+---
+
+# 17. SISTEMA DE CITAS
+
+Conserva y verifica la lógica existente.
+
+Debe permitir:
+
+- Consultar disponibilidad.
+- Reservar.
+- Cancelar.
+- Liberar horarios.
+- Consultar estado.
+- Evitar dobles reservas.
+
+Una cita no puede ser reservada simultáneamente por dos estudiantes.
+
+Al cancelar, el horario debe quedar disponible de acuerdo con las reglas del sistema.
+
+No rompas el sistema existente para cambiar el diseño del calendario.
+
+---
+
+# 18. ASISTENTE CONVERSACIONAL Y MANEJO DE CRISIS
+
+Si el asistente conversacional está implementado, audita su funcionamiento.
+
+Debe acompañar de forma responsable.
+
+No debe:
+- Diagnosticar.
+- Reemplazar a un psicólogo.
+- Inventar recursos.
+- Tratar una crisis como una conversación común.
+- Hacer afirmaciones clínicas sin fundamento.
+
+Conserva y verifica las reglas existentes para situaciones de riesgo.
+
+Revisa los recursos de ayuda que estén configurados y comprueba su vigencia antes de presentarlos como activos.
+
+No inventes teléfonos, direcciones ni servicios.
+
+---
+
+# 19. DISEÑO DE TODAS LAS PANTALLAS
+
+La identidad de las tres pantallas rectoras debe extenderse al resto de la aplicación.
+
+No quiero que Inicio tenga un diseño sofisticado y las demás pantallas parezcan pertenecer a otra aplicación.
+
+Debes establecer un sistema de diseño reutilizable.
+
+Define:
+- Colores.
+- Tipografía.
+- Jerarquías.
+- Espaciados.
+- Bordes.
+- Superficies.
+- Botones.
+- Iconografía.
+- Estados.
+- Fondos.
+- Componentes.
+- Animaciones.
+
+Todas las pantallas deben compartir el mismo lenguaje visual.
+
+Las nuevas interfaces deben respetar las referencias disponibles.
+
+Cuando no exista una referencia específica, crea una solución coherente con las tres pantallas rectoras.
+
+No inventes un estilo nuevo para cada módulo.
+
+## 19.1. Calidad visual obligatoria
+
+Revisa especialmente:
+- Recortes.
+- Escalado.
+- Resolución.
+- Alineación.
+- Espacios.
+- Contraste.
+- Legibilidad.
+- Adaptación al tamaño del dispositivo.
+- Elementos superpuestos.
+- Navegación.
+- Estados activos.
+- Botones.
+- Iconos.
+- Ilustraciones.
+
+No aceptar:
+- Texto cortado.
+- Imágenes deformadas.
+- Botones sin respuesta.
+- Cuadrados blancos inesperados.
+- Bordes de imágenes residuales.
+- Elementos fuera de pantalla.
+- Componentes duplicados.
+- Pantallas visualmente vacías.
+- Tarjetas genéricas que contradigan las referencias.
+
+---
+
+# 20. ARQUITECTURA Y CALIDAD DEL CÓDIGO
+
+Trabaja con la arquitectura que ya existe.
+
+No introduzcas una migración completa sin necesidad.
+
+Utiliza correctamente:
+- Kotlin.
+- Jetpack Compose.
+- ViewModels.
+- Estados.
+- Eventos.
+- Repositorios.
+- Modelos.
+- Navegación.
+
+Centraliza la información cuando corresponda.
+
+Evita que cada pantalla mantenga una copia independiente de los mismos datos.
+
+Utiliza identificadores estables.
+
+Controla:
+- Estados de carga.
+- Errores.
+- Guardados.
+- Reintentos.
+- Duplicados.
+- Persistencia.
+- Cambios de pantalla.
+- Cierre de aplicación.
+- Recuperación de estados.
+
+No declares que los datos son persistentes si solo permanecen en memoria.
+
+Si la aplicación utiliza almacenamiento local, documenta sus límites.
+
+Si utiliza backend, identifica cómo funciona realmente.
+
+No inventes una conexión a servidores externos.
+
+---
+
+# 21. EXPERIENCIA DE USUARIO Y ACCESIBILIDAD
+
+La aplicación debe ser cómoda en dispositivos Android.
+
+Comprueba:
+
+- Diferentes tamaños de pantalla.
+- Desplazamiento.
+- Tamaño de fuente.
+- Contraste.
+- Lectura.
+- Áreas táctiles.
+- Descripciones de accesibilidad.
+- Navegación.
+- Estados de error.
+- Estados vacíos.
+- Carga.
+- Confirmaciones.
+
+No permitir que el contenido quede cortado.
+
+No utilizar únicamente colores para comunicar estados.
+
+Los botones deben ser comprensibles.
+
+Las interacciones deben tener respuestas visuales coherentes.
+
+---
+
+# 22. REQUISITOS DE PRUEBAS
+
+No entregues el trabajo sin ejecutar pruebas.
+
+## 22.1. Compilación
+
+Ejecuta la compilación correspondiente al proyecto.
+
+Por ejemplo:
+
+./gradlew assembleDebug
+
+Y las pruebas disponibles:
+
+./gradlew testDebugUnitTest
+
+Si existen pruebas instrumentadas, ejecútalas cuando el entorno lo permita.
+
+Corrige los errores encontrados.
+
+## 22.2. Pruebas funcionales del estudiante
+
+Verifica:
+
+- Ingreso.
+- Navegación.
+- Registro emocional.
+- Validación de emociones.
+- Guardado.
+- Historial.
+- Catálogo.
+- Filtros.
+- Detalle.
+- Inicio de actividad.
+- Pausa.
+- Continuación.
+- Finalización.
+- Reflexión.
+- Bitácora.
+- Progreso semanal.
+- Perfil.
+- Contrapeso.
+- Rutas.
+
+## 22.3. Pruebas del psicólogo
+
+Verifica:
+
+- Acceso.
+- Generación de código.
+- Validación.
+- Vinculación.
+- Estudiantes.
+- Permisos.
+- Información autorizada.
+- Citas.
+- Cancelaciones.
+- Disponibilidad.
+
+## 22.4. Pruebas de privacidad
+
+Comprueba específicamente:
+
+1. Un estudiante sin vinculación no aparece en el panel de un psicólogo.
+2. Un estudiante vinculado no comparte información no autorizada.
+3. Las reflexiones privadas no aparecen en el portal profesional.
+4. La revocación de permisos impide accesos posteriores según la arquitectura.
+5. Los datos de un estudiante no se mezclan con los de otro.
+
+## 22.5. Pruebas visuales
+
+Abre la aplicación en el emulador.
+
+Revisa las pantallas una por una.
+
+Compara con las imágenes de referencia.
+
+No consideres terminada una pantalla solo porque compila.
+
+Debes verificar la composición visual real.
+
+---
+
+# 23. ORDEN DE EJECUCIÓN
+
+Trabaja en este orden:
+
+### ETAPA 1. AUDITORÍA
+
+Comprende el proyecto y registra qué existe.
+
+### ETAPA 2. SISTEMA VISUAL
+
+Analiza las imágenes y establece un sistema de diseño coherente.
+
+Reconstruye las pantallas necesarias para alcanzar la fidelidad visual solicitada.
+
+### ETAPA 3. FUNCIONALIDAD DEL ESTUDIANTE
+
+Verifica e implementa:
+- Inicio.
+- Registro emocional.
+- Mareas.
+- Rutas.
+- Contrapeso.
+- Catálogo.
+- Filtros.
+- Ejecución.
+- Cierres.
+- Bitácora.
+- Historial.
+- Progreso.
+- Perfil.
+
+### ETAPA 4. ACOMPAÑAMIENTO Y PSICÓLOGO
+
+Verifica e implementa:
+- Vinculación.
+- Permisos.
+- Portal profesional.
+- Estudiantes.
+- Citas.
+- Seguimiento.
+
+### ETAPA 5. INTEGRACIÓN
+
+Comprueba que las funciones se comuniquen correctamente.
+
+### ETAPA 6. PRUEBAS Y CORRECCIONES
+
+Ejecuta pruebas, abre el emulador y corrige los errores.
+
+### ETAPA 7. ENTREGA
+
+Presenta un informe técnico real.
+
+No te detengas después de realizar la auditoría.
+
+Debes continuar hasta donde el entorno y los recursos disponibles permitan implementar y verificar el proyecto.
+
+Si una tarea depende de credenciales, servicios externos o infraestructura que no está disponible, completa lo que sí se pueda desarrollar y documenta exactamente el bloqueo.
+
+---
+
+# 24. RESTRICCIONES IMPORTANTES
+
+NO debes:
+
+- Crear una aplicación nueva sin necesidad.
+- Reemplazar el proyecto por un prototipo.
+- Destruir funcionalidades existentes.
+- Eliminar la lógica de citas.
+- Eliminar el sistema de vinculación.
+- Exponer información privada.
+- Inventar datos reales.
+- Inventar resultados de pruebas.
+- Utilizar capturas como fondos.
+- Introducir una identidad gráfica distinta.
+- Volver a utilizar tarjetas genéricas como solución universal.
+- Crear navegación duplicada.
+- Crear botones sin funcionalidad.
+- Simular operaciones exitosas.
+- Agregar puntos, monedas, niveles o recompensas competitivas.
+- Convertir Aflote en un videojuego.
+- Introducir funciones que no tienen relación con el propósito del proyecto.
+- Cambiar las referencias visuales por una interpretación personal.
+
+No eliminar elementos funcionales simplemente porque sean difíciles de integrar visualmente.
+
+---
+
+# 25. CRITERIOS DE ACEPTACIÓN FINAL
+
+El proyecto solo podrá considerarse terminado cuando cumpla los siguientes puntos:
+
+**VISUAL**
+- [ ] Las pantallas rectoras reproducen fielmente las referencias.
+- [ ] Las demás pantallas mantienen el mismo sistema visual.
+- [ ] No existen recortes defectuosos.
+- [ ] No existen elementos fuera de lugar.
+- [ ] La navegación es visualmente coherente.
+- [ ] La aplicación se adapta al dispositivo.
+
+**FUNCIONALIDAD DEL ESTUDIANTE**
+- [ ] El registro emocional funciona.
+- [ ] Las mareas se registran correctamente.
+- [ ] El historial se actualiza.
+- [ ] Rutas funciona.
+- [ ] Contrapeso funciona.
+- [ ] El catálogo funciona.
+- [ ] Los filtros funcionan.
+- [ ] Las actividades se pueden ejecutar.
+- [ ] Los cierres reflexivos funcionan.
+- [ ] La bitácora registra datos reales.
+- [ ] El progreso semanal se calcula correctamente.
+- [ ] El perfil permite las acciones implementadas.
+
+**PSICÓLOGO**
+- [ ] El ingreso profesional funciona según la autenticación disponible.
+- [ ] La vinculación funciona.
+- [ ] Los permisos son efectivos.
+- [ ] Los estudiantes aparecen correctamente.
+- [ ] El seguimiento utiliza información autorizada.
+- [ ] Las citas funcionan.
+- [ ] Las cancelaciones liberan horarios.
+
+**PRIVACIDAD**
+- [ ] Las reflexiones privadas no se exponen.
+- [ ] No hay acceso cruzado entre estudiantes.
+- [ ] Los permisos controlan los datos.
+- [ ] La información se maneja de manera coherente.
+
+**TÉCNICO**
+- [ ] La aplicación compila.
+- [ ] Las pruebas ejecutadas pasan.
+- [ ] No existen errores críticos conocidos.
+- [ ] No existen botones sin acción.
+- [ ] Los estados son consistentes.
+- [ ] La persistencia está documentada.
+- [ ] Se ha probado la aplicación en emulador.
+
+---
+
+# 26. INFORME FINAL OBLIGATORIO
+
+Al terminar, entrega un informe con:
+
+## A. Diagnóstico inicial
+Qué encontraste en el proyecto antes de modificarlo.
+
+## B. Reconstrucción visual
+Qué pantallas cambiaste y qué tan fieles son a las referencias.
+
+## C. Funcionalidades implementadas
+Qué estaba pendiente y qué quedó funcionando.
+
+## D. Arquitectura
+Qué archivos modificaste y cómo se conectan.
+
+## E. Privacidad
+Cómo verificaste que la información privada no se comparte indebidamente.
+
+## F. Pruebas
+Qué comandos ejecutaste y sus resultados reales.
+
+## G. Emulador
+Qué pantallas verificaste y qué errores corregiste.
+
+## H. Limitaciones
+Qué no pudiste implementar y por qué.
+
+## I. Estado final
+Clasifica cada funcionalidad como:
+- Implementada y verificada.
+- Implementada parcialmente.
+- Pendiente.
+- Bloqueada.
+
+No declares que algo está terminado si solamente existe su interfaz.
+
+No ocultes errores.
+
+---
+
+# 27. INSTRUCCIÓN FINAL
+
+Quiero que desarrolles AFLOTE hasta el alcance descrito en este documento.
+
+Las imágenes que adjunto son la guía visual principal. Debes reproducirlas con la mayor fidelidad posible y extender su lenguaje gráfico al resto de la aplicación.
+
+El código existente es la base del trabajo. Debes comprenderlo, conservar lo que funciona, corregir lo que falla y desarrollar lo que falta.
+
+No quiero una aplicación que solamente se vea bonita.
+
+Tampoco quiero una aplicación funcional con una interfaz visual mediocre.
+
+Quiero las dos cosas al mismo tiempo:
+
+**UNA APLICACIÓN VISUALMENTE FIEL A LAS REFERENCIAS, FUNCIONALMENTE COMPLETA, TÉCNICAMENTE CONSISTENTE, PRIVADA, INTEGRADA Y PROFESIONAL.**
+
+Trabaja con criterio de producto real, no de demostración universitaria superficial.
+
+No finalices cuando hayas escrito el plan. Ejecuta el trabajo, prueba los resultados y corrige los problemas.
+
+Si el entorno tiene límites de ejecución, trabaja hasta el máximo posible sin fingir resultados y deja documentado qué falta para completar la entrega.
+
+**A partir de este momento, tu prioridad es convertir el proyecto existente en la versión integral de AFLOTE que acabamos de especificar.**
